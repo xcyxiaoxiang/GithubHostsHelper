@@ -190,6 +190,7 @@ if __name__ == '__main__':
             print("\t\t*responseTime:" + str(best_responsetime) + "毫秒\t\t\t\t")
             print("\n")
             print("\t\t\t\t\t Create By xcy.小相")
+            print("\t https://github.com/xcyxiaoxiang/GithubHostsHelper")
             print("============================================================")
 
             input()

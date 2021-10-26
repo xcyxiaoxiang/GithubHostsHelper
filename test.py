@@ -1,0 +1,8 @@
+print("==================GithubHostsHelper=======================")
+print("\n")
+print("\t\t\t线路已更换成功，欢迎再次使用！")
+print("\t\t\t\tip:"+'best_ip'+"\t\t\t\t")
+print("\t\t\t\taddress:"+'best_ip'+"\t\t\t")
+print("\t\t\t\tresponseTime:"+'best_ip'+"\t\t\t\t")
+print("\t\t\t\t\t\t\t\t\t\t\t By xcy.小相")
+print("==========================================================")

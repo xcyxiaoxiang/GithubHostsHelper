@@ -85,7 +85,7 @@ def speed_test(guid, location):
         return ip, ipaddress, responsetime
 
 
-def change_host_conf(ip):
+def change_host_conf(ip_list):
     """
     更改（添加）当前主机的hosts文件(域名解析文件)，若原有的Host文件中已经含有关于github中的dns解析数据，那么将会删除该部分数据
     :param ip:ping值最小的ip地址
@@ -106,8 +106,9 @@ def change_host_conf(ip):
                 continue
             text = text + line
     text = text + "#===========Add by Python script github  start=========\n"
-    text = text + ip + "\tgithub.com\n"
-    text = text + ip + "\tgithub.github.io\n"
+    for ip in tuple(ip_list):
+        text = text + ip + "\tgithub.com\n"
+        text = text + ip + "\tgithub.github.io\n"
     text = text + "#===========Add by Python script github  end===========\n"
 
     with open(host_path, "w+", encoding="utf-8")as f_new:
@@ -170,28 +171,26 @@ if __name__ == '__main__':
         # 控制主线程等待所有子线程结束后再向下执行
         for t in threadList:
             t.join()
-        best_responsetime = 10000
-        best_ip = ""
-        best_ipaddress = ""
+        # best_responsetime = 10000
+        # best_ip = ""
+        # best_ipaddress = ""
+        data_list = list()
         for _ in range(dataQueue.qsize()):
-            data = dataQueue.get()
-            if int(data[2]) < int(best_responsetime):
-                best_responsetime = data[2]
-                best_ipaddress = data[1]
-                best_ip = data[0]
-        print("\n=========所有线路测试完毕，正在为您更换最优线路========="
-              "\n\t*ipaddress:" + best_ipaddress +
-              "\n\t*ip:" + best_ip +
-              "\n\t*speed:" + str(best_responsetime))
+            data_list.append(dataQueue.get()[0])
+            #
+            # if int(data[2]) < int(best_responsetime):
+            #     best_responsetime = data[2]
+            #     best_ipaddress = data[1]
+            #     best_ip = data[0]
 
         try:
-            change_host_conf(best_ip)
+            change_host_conf(data_list)
             print("\n\n==================GithubHostsHelper=========================")
             print("\n")
             print("\t线路已更换成功，欢迎再次使用！")
-            print("\t\t*ip:" + best_ip + "\t\t\t\t")
-            print("\t\t*address:" + best_ipaddress + "\t\t\t")
-            print("\t\t*responseTime:" + str(best_responsetime) + "毫秒\t\t\t\t")
+            # print("\t\t*ip:" + best_ip + "\t\t\t\t")
+            # print("\t\t*address:" + best_ipaddress + "\t\t\t")
+            # print("\t\t*responseTime:" + str(best_responsetime) + "毫秒\t\t\t\t")
             print("\n")
             print("\t\t\t\t\t Create By xcy.小相")
             print("\t https://github.com/xcyxiaoxiang/GithubHostsHelper")

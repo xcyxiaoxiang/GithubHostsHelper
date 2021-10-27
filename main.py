@@ -1,14 +1,19 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2021/10/27 8:13
+# @Author  : Xcy.小相
+# @Site    :
+# @File    : tesy.py
+# @Software: PyCharm
+
 import queue
 import random
 import threading
-import time
-
 from lxml import etree
 import requests
 import os
 import re
 import ctypes, sys
-from threading import Thread, Lock
+
 
 agents = [
     'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11',
@@ -168,7 +173,6 @@ if __name__ == '__main__':
         best_responsetime = 10000
         best_ip = ""
         best_ipaddress = ""
-        time.sleep(2)
         for _ in range(dataQueue.qsize()):
             data = dataQueue.get()
             if int(data[2]) < int(best_responsetime):

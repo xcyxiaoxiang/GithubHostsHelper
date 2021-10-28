@@ -188,6 +188,9 @@ if __name__ == '__main__':
 
         try:
             change_host_conf(data_list)
+            res = os.popen("ipconfig /flushdns")
+            for line in res:
+                print(line,end="")
             print("\n\n==================GithubHostsHelper=========================")
             print("\n")
             print("\t线路已更换成功，欢迎再次使用！最优路线为：")

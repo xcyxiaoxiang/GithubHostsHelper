@@ -29,6 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1zzNctah8SA6E7Vu3GizRLkNGJc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -41,6 +44,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\爬虫及脚本\GithubHostsHelper" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -113,7 +121,9 @@
       <workItem from="1635257058632" duration="1034000" />
       <workItem from="1635293464230" duration="4434000" />
       <workItem from="1635327824978" duration="4126000" />
-      <workItem from="1635343627242" duration="2005000" />
+      <workItem from="1635343627242" duration="2264000" />
+      <workItem from="1635381166673" duration="543000" />
+      <workItem from="1635382266576" duration="299000" />
     </task>
     <servers />
   </component>
@@ -137,25 +147,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1635169162691" />
-    <state width="1493" height="120" key="GridCell.Tab.0.bottom" timestamp="1635346020423">
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1635382570478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="120" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635346020423" />
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635382570478" />
     <state width="1877" height="121" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.6.1536.824@0.0.1920.1040" timestamp="1635337733111" />
-    <state width="1493" height="120" key="GridCell.Tab.0.center" timestamp="1635346020422">
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1635382570478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="120" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635346020422" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635382570478" />
     <state width="1877" height="121" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.6.1536.824@0.0.1920.1040" timestamp="1635337733111" />
-    <state width="1493" height="120" key="GridCell.Tab.0.left" timestamp="1635346020422">
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1635382570478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="120" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635346020422" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635382570478" />
     <state width="1877" height="121" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.6.1536.824@0.0.1920.1040" timestamp="1635337733111" />
-    <state width="1493" height="120" key="GridCell.Tab.0.right" timestamp="1635346020423">
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1635382570478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="120" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635346020423" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635382570478" />
     <state width="1877" height="121" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.6.1536.824@0.0.1920.1040" timestamp="1635337733111" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1635156898911">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -183,8 +193,9 @@
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1635344002151" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GithubHostsHelper$test.coverage" NAME="test Coverage Results" MODIFIED="1635382481630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/githubHostScript$test.coverage" NAME="test Coverage Results" MODIFIED="1635254670234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/githubHostScript$main.coverage" NAME="main Coverage Results" MODIFIED="1635255973997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GithubHostsHelper$main.coverage" NAME="main Coverage Results" MODIFIED="1635345908819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GithubHostsHelper$main.coverage" NAME="main Coverage Results" MODIFIED="1635382570469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
